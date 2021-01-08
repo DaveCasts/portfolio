@@ -1,0 +1,297 @@
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:
+		400,400i,700,700i&display=swap" rel="stylesheet">
+
+	<link
+    	rel="stylesheet"
+    	href="prism-atom-dark.css"
+    	type="text/css"
+    	media="screen"
+	/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+  <title>Dave Campos</title>
+  <meta name="description" content="Dave Campos is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+
+
+ </head>
+
+	<body>
+		<div class="about-container">
+		<ul>
+		  <li><a href="#bout" class="nav-link">About</a></li>
+		  <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+		  <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+		  <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+		  <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+	  	</ul>
+		<div class="about">
+			<img src="5k.jpg" class="me"/>
+
+			<h1>Dave Campos</h1>
+			<h2>FULL STACK WEB DEVELOPER</h2>
+			<hr class="gray"/> 
+			<p class="bio">
+        Dave Campos is a Freelance
+      <br />
+        Full stack web developer.
+      </p>
+		</div>
+		</div>
+
+    <h3 class="about" id="bout">About</h3>
+    <hr class="red">
+
+    <div class="text-center">
+      <p align="center">
+        Dave Campos is a professional
+        software engineer specializing in full-stack development.
+      <br />
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.
+      </p>
+    </div>
+
+    <br class="clear" />
+
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+
+    <hr class="red" />
+
+    <p class="skills-and-tools">
+      Dave has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+
+    <div class="icons">
+
+      <img src="github.png" class="icon" />
+      <img src="rubocop.png" class="icon" />
+      <img src="trello.png" class="icon" />
+      <img src="slack.png" class="icon" />
+      <img src="codeship.png" class="icon" />
+
+      <br class="clear" />
+      <img src="skills.png" class="icon" />
+  
+    </div>
+
+    <br class="clear" />
+
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="red">
+
+		<div class="box">
+ 			<h4>Temperature Conversion</h4>
+			<p>
+				This Ruby program will prompt the user for a temperature
+			    in degrees Celsius and let the user know what the
+			    corresponding temperature is in Fahrenheit.
+			</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">
+  			puts &quot;Enter a temperature in celsius: &quot;
+
+			temp = gets.chomp
+
+			fahr = (temp.to_i * 9 / 5) + 32
+
+			puts &quot;Your temperature converted to fahrenheit is #{fahr}.&quot;
+		</code></pre>
+
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+			<pre><code class="language-ruby">
+  			puts &quot;Enter a number: &quot;
+
+			num = gets.chomp.to_i
+
+			ones_place = num % 10
+			tens_place = num % 100
+
+			if tens_place &gt;= 11 &amp;&amp; tens_place &lt;= 19
+			    puts &quot;That's the #{num}th item.&quot;
+			elsif ones_place == 0 
+			    puts &quot;That's the #{num}th item.&quot;
+			elsif ones_place == 1
+			    puts &quot;That's the #{num}st item.&quot;
+			elsif ones_place == 2
+			    puts &quot;That's the #{num}nd item.&quot;
+			elsif ones_place == 3
+			    puts &quot;That's the #{num}rd item.&quot;
+			else
+			    puts &quot;That's the #(num}th item.&quot;
+			end
+		</code></pre>
+
+		</div>
+
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+  			<p>
+    			This Ruby program will convert a plain number
+    			to the ordinal of the number. So for example,
+    			if the user enters 2, it will display 2nd, if
+    			the user enters 3, it will display 3rd, etc.
+  			</p>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+		    <h4>Foobar</h4>
+ 			<p>
+			    This Ruby program is an adaptation of a classic technical
+			    interview problem which displays sequences
+			    of the Foobar pattern.
+  			</p>
+		</div>
+
+		<div class="box">
+			<pre><code class="language-ruby">
+			puts &quot;How many items do you want to see? &quot;
+
+			num = gets.chomp.to_i
+
+			[*1..num].each do |x|
+
+			    div_by_5 = x % 5 == 0
+			    div_by_3 = x % 3 == 0
+
+			    if div_by_3 &amp;&amp; div_by_5
+			        puts &quot;FooBar&quot;
+			    elsif div_by_3
+			        puts &quot;Foo&quot;
+			    elsif div_by_5
+			        puts &quot;Bar&quot;
+			    else 
+			        puts &quot;#{x}&quot;
+
+			    end
+			end
+		</code></pre>
+
+		</div>
+
+		<br class="clear" />
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="red" />
+
+		<div class="box">
+			<h4><a href="https://splurty-dave-castro.herokuapp.com/" target="_blank">Quote Generator</a></h4>
+			<img src="splurty.png" class="full-width" />
+			<p>
+     		A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+    		Uses Git and GitHub for version control, and launched on Heroku.
+        <a href="https://github.com/DaveCasts/yeet" target="_blank">Github</a>
+      </p>
+		</div>
+
+		 <div class="box">
+      <h4><a href="https://nomster-dave-campos.herokuapp.com" target="_blank">Yelp Clone</a></h4>
+      <img src="nomster.png" class="full-width" />
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+        <a href="https://github.com/DaveCasts/nom" target="_blank">Github</a>
+      </p>
+    </div>
+
+    <br class="clear" />
+
+    <div class="box">
+      <h4><a href="https://flixter-dave-campos.herokuapp.com" target="_blank">Two-Sided Market Place</a></h4>
+      <img src="flixter.png" class="full-width" />
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+        <a href="https://github.com/DaveCasts/flixter" target="_blank">Github</a>
+      </p>
+    </div>
+    <div class="box">
+      <h4><a href="https://grammable-dave-campos.herokuapp.com" target="_blank">Test Driven Development</a></h4>
+      <img src="grammable.png" class="full-width" />
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+        <a href="https://github.com/DaveCasts/gram" target="_blank">Github</a>
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4><a href="https://todo-dave-campos.herokuapp.com" target="_blank">To-do</a></h4>
+      <img src="todoster.png" class="full-width" />
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+        <a href="https://github.com/DaveCasts/todo-dave-campos" target="_blank">Github</a>
+      </p>
+    </div>
+    <div class="box">
+      <h4><a href="https://nasa-dave-campos.herokuapp.com" target="_blank">A Snapshot of the Universe</a></h4>
+      <img src="nasa.png" class="full-width" />
+      <p>
+        This final project uses Nasa's picture of the 
+        day API to display the picture of the day and 
+        lets a user search through Nasa's picture database.
+        <a href="https://github.com/DaveCasts/nasafin" target="_blank">Github</a>
+      </p>
+    </div>
+
+  <br class="clear" />
+
+	<div class="contact-me" id="hire-me" />
+
+		<h3 class="contact-headline">Contact</h3>
+		<hr class="red" />
+		<p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via email:
+      	</p>
+
+      	<p>
+        <a href="mailto:my@email.com" class="contact-link">
+          daveacamposc@gmail.com
+        </a>
+      </p>
+      <form action="daveacamposc@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <br />
+        <input type="text" id="name" name="name" placeholder="Your name..">
+        <br />
+        <br />
+        <label for="subject">Message</label>
+        <br />
+        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Submit">
+      </form>
+      <br class ="clear"/>
+
+    </div>
+    
+	</body>
+
+</html>
