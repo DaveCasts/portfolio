@@ -113,7 +113,7 @@ p {
 }
 
 .contact-me {
-	height: 400px;
+	height: 250px;
 	background-color: #202020;
 	padding-top: 30px;
 }
@@ -154,12 +154,4 @@ li {
 .hire-me {
 	border-style: solid;
 	border-color: white;
-}
-
-form {
-	text-align: center;
-}
-
-label {
-	color: white;
 }
