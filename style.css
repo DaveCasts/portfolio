@@ -50,6 +50,7 @@ h4 {
 	margin-top: 5%;
 	color: black;
 	font-family: 'Roboto Mono', monospace;
+	max-width: 90%;
 }
 
 .gray {
